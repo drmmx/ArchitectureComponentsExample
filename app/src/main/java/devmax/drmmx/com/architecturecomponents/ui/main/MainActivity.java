@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable List<Note> notes) {
                 //update RecyclerView
-                adapter.setNotes(notes);
+                adapter.submitList(notes);
             }
         });
 
